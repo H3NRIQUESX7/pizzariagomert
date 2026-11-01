@@ -201,7 +201,7 @@ $("checkoutForm").addEventListener("submit", e => {
   if (!name) return showError("Informe seu nome para continuar.", $("custName"));
   if (mode === "Entrega" && !address) return showError("Informe o endereço de entrega.", $("custAddress"));
 
-  if (WHATSAPP_NUMBER === "5500000000000") {
+  if (WHATSAPP_NUMBER === "61995746698") {
     return showError("O número de WhatsApp da pizzaria ainda não foi configurado no arquivo script.js.");
   }
 
