@@ -1,0 +1,15 @@
+PIZZA GOURMET — SITE
+
+Como visualizar: extraia o ZIP e abra index.html no navegador.
+
+ANTES DE PUBLICAR
+1. Abra script.js e troque WHATSAPP_NUMBER (no topo) pelo número real da pizzaria,
+   com código do país e DDD, somente números. Ex.: 5561999999999
+
+COMO FUNCIONA
+- As imagens pizza1 a pizza4 são o cardápio clicável: o cliente toca na pizza,
+  escolhe tamanho, borda, quantidade e observações.
+- O pedido (nome, entrega/retirada, endereço, pagamento) é enviado pelo WhatsApp.
+- O pedido fica salvo no navegador do cliente se ele recarregar a página.
+
+PREÇOS (editáveis em script.js): Pequena R$ 20, Média R$ 28, Grande R$ 40, borda R$ 4.

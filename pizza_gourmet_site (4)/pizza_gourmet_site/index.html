@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0805">
+  <meta name="description" content="Pizza Gourmet Mais Sabor: escolha sua pizza, monte o pedido e finalize pelo WhatsApp. Massa com farinha tipo 00 importada da Itália.">
+  <meta property="og:title" content="Pizza Gourmet | Mais Sabor">
+  <meta property="og:description" content="Escolha sua pizza e finalize o pedido pelo WhatsApp.">
+  <meta property="og:image" content="assets/logo.webp">
+  <title>Pizza Gourmet | Mais Sabor</title>
+  <link rel="icon" href="assets/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <a class="skip-link" href="#cardapio">Ir para o cardápio</a>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Pizza Gourmet, início">
+      <img src="assets/logo.webp" alt="Pizza Gourmet Mais Sabor" width="40" height="37">
+    </a>
+    <nav id="nav" aria-label="Principal">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#pedido">Meu pedido</a>
+    </nav>
+    <a class="cart-pill" href="#pedido" aria-label="Ver meu pedido">
+      <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M6 7h12l-1.2 11.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 9V7a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      <span id="headerCount">0</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <p class="hero-badge"><i class="flag" aria-hidden="true"><b></b><b></b><b></b></i>Farinha tipo 00 importada da Itália</p>
+      <h1><span class="line"><span>Mais sabor.</span></span><span class="line"><span>Em cada fatia.</span></span></h1>
+      <p class="hero-sub">Escolha a sua e peça em segundos pelo WhatsApp.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#cardapio">Escolher minha pizza</a>
+        <a class="text-link" href="#pedido">Ver meu pedido</a>
+      </div>
+      <div class="hero-logo"><img src="assets/logo.webp" alt="Logo Pizza Gourmet Mais Sabor" width="604" height="556"></div>
+    </section>
+
+    <section class="menu" id="cardapio">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <h2>Escolha a sua.</h2>
+          <p>Toque na pizza. Depois é só escolher tamanho e borda.</p>
+        </header>
+
+        <div class="pizza-grid">
+          <button class="pizza-pick" data-reveal style="--i:0" type="button" data-pizza="portuguesa" aria-label="Escolher Portuguesa">
+            <span class="pic"><img src="assets/pizza1.webp" alt="Pizza Portuguesa: molho especial, muçarela, presunto, ovo, calabresa, cebola, pimentão, tomate, azeitona e orégano. Pequena R$ 20, média R$ 28, grande R$ 40." width="1104" height="410" loading="lazy"><i class="shine"></i></span>
+            <span class="pick-cta">Escolher</span>
+            <span class="pick-badge" hidden></span>
+          </button>
+          <button class="pizza-pick" data-reveal style="--i:1" type="button" data-pizza="moda-da-casa" aria-label="Escolher À Moda da Casa">
+            <span class="pic"><img src="assets/pizza2.webp" alt="Pizza À Moda da Casa: molho especial, muçarela, calabresa, presunto, pimentão, tomate, azeitona e orégano. Pequena R$ 20, média R$ 28, grande R$ 40." width="1096" height="352" loading="lazy"><i class="shine"></i></span>
+            <span class="pick-cta">Escolher</span>
+            <span class="pick-badge" hidden></span>
+          </button>
+          <button class="pizza-pick" data-reveal style="--i:2" type="button" data-pizza="frango-milho" aria-label="Escolher Frango com Milho">
+            <span class="pic"><img src="assets/pizza3.webp" alt="Pizza Frango com Milho: molho especial, muçarela, frango desfiado, milho, bacon, azeitona e orégano. Pequena R$ 20, média R$ 28, grande R$ 40." width="1106" height="342" loading="lazy"><i class="shine"></i></span>
+            <span class="pick-cta">Escolher</span>
+            <span class="pick-badge" hidden></span>
+          </button>
+          <button class="pizza-pick" data-reveal style="--i:3" type="button" data-pizza="frango-catupiry" aria-label="Escolher Frango com Catupiry">
+            <span class="pic"><img src="assets/pizza4.webp" alt="Pizza Frango com Catupiry: molho especial, muçarela, frango desfiado, Catupiry, azeitona e orégano. Pequena R$ 20, média R$ 28, grande R$ 40." width="1084" height="336" loading="lazy"><i class="shine"></i></span>
+            <span class="pick-cta">Escolher</span>
+            <span class="pick-badge" hidden></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="order" id="pedido">
+      <div class="wrap order-grid">
+        <div class="order-intro" data-reveal>
+          <h2>Seu pedido.</h2>
+          <p>Revise os itens, informe seus dados e envie. O resto a gente combina na conversa do WhatsApp.</p>
+        </div>
+
+        <div class="order-box" data-reveal style="--i:1">
+          <div class="order-top"><h3>Itens</h3><span id="itemCount">0 itens</span></div>
+          <div id="cartItems" class="cart-items" aria-live="polite">
+            <p class="empty-cart">Seu pedido está vazio. <a href="#cardapio">Escolher uma pizza</a></p>
+          </div>
+          <div class="cart-total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
+
+          <form id="checkoutForm" novalidate>
+            <label class="field">
+              <span>Seu nome</span>
+              <input type="text" id="custName" autocomplete="name" placeholder="Como podemos te chamar?" required>
+            </label>
+
+            <fieldset class="field seg">
+              <legend>Como prefere receber?</legend>
+              <label><input type="radio" name="mode" value="Entrega" checked><span>Entrega</span></label>
+              <label><input type="radio" name="mode" value="Retirada"><span>Retirada</span></label>
+            </fieldset>
+
+            <label class="field" id="addressField">
+              <span>Endereço de entrega</span>
+              <textarea id="custAddress" rows="2" autocomplete="street-address" placeholder="Rua, número, bairro e ponto de referência"></textarea>
+            </label>
+
+            <label class="field">
+              <span>Forma de pagamento</span>
+              <select id="custPay">
+                <option>Pix</option>
+                <option>Cartão</option>
+                <option>Dinheiro</option>
+              </select>
+            </label>
+
+            <p id="formMsg" class="form-msg" role="alert" hidden></p>
+            <button type="submit" id="checkout" class="btn btn-gold btn-block" disabled>Enviar pedido pelo WhatsApp</button>
+            <small class="hint">Entrega, taxa e tempo de preparo são confirmados na conversa.</small>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>Pizza Gourmet. Mais sabor em cada fatia.</span>
+      <a href="#inicio">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <button class="float-cart" id="floatCart" type="button" hidden>
+    <span id="floatCount">0 itens</span>
+    <strong id="floatTotal">R$ 0,00</strong>
+    <span class="float-go">Ver pedido</span>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog id="pizzaDialog" aria-labelledby="dlgName">
+    <form id="pizzaForm" method="dialog">
+      <button type="button" class="dlg-close" id="dlgClose" aria-label="Fechar">&times;</button>
+      <img class="dlg-img" id="dlgImg" src="" alt="">
+      <div class="dlg-body">
+        <h3 id="dlgName">Pizza</h3>
+
+        <fieldset class="opt">
+          <legend>Tamanho</legend>
+          <div class="size-grid">
+            <label class="size-card"><input type="radio" name="size" value="Pequena" checked><span><b>Pequena</b><small>4 fatias</small><strong>R$ 20,00</strong></span></label>
+            <label class="size-card"><input type="radio" name="size" value="Média"><span><b>Média</b><small>&nbsp;</small><strong>R$ 28,00</strong></span></label>
+            <label class="size-card"><input type="radio" name="size" value="Grande"><span><b>Grande</b><small>8 fatias</small><strong>R$ 40,00</strong></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="opt">
+          <legend>Borda recheada <em>+ R$ 4,00</em></legend>
+          <div class="edge-grid">
+            <label class="chip"><input type="radio" name="edge" value="" checked><span>Sem borda</span></label>
+            <label class="chip"><input type="radio" name="edge" value="Cheddar"><span>Cheddar</span></label>
+            <label class="chip"><input type="radio" name="edge" value="Catupiry"><span>Catupiry</span></label>
+            <label class="chip"><input type="radio" name="edge" value="Cheddar e Catupiry"><span>Cheddar e Catupiry</span></label>
+          </div>
+        </fieldset>
+
+        <label class="opt obs">
+          <span>Observações <small>(opcional)</small></span>
+          <textarea id="obs" rows="2" placeholder="Ex.: sem cebola"></textarea>
+        </label>
+
+        <div class="dlg-foot">
+          <div class="qty" role="group" aria-label="Quantidade">
+            <button type="button" id="qtyMinus" aria-label="Diminuir">&minus;</button>
+            <output id="qtyVal">1</output>
+            <button type="button" id="qtyPlus" aria-label="Aumentar">+</button>
+          </div>
+          <button type="submit" class="btn btn-gold dlg-add" id="dlgAdd">Adicionar <span id="dlgTotal">R$ 20,00</span></button>
+        </div>
+      </div>
+    </form>
+  </dialog>
+
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="script.js"></script>
+</body>
+</html>
